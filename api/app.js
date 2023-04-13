@@ -12,7 +12,7 @@ app.use('/images', express.static(`${__dirname}/images`));
 app.use(express.json());
 
 app.use(cors({
-  origin: '*',
+  origin: 'https://vercel.com/dashboard',
 }));
 
 app.use('/user', userRouter);
