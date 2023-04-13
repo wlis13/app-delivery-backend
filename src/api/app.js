@@ -23,4 +23,9 @@ app.use('/customer', saleRouter);
 
 app.use(handleError);
 
+const port = process.env.PORT || 3001;
+
+app.listen(port);
+console.log(`Api rodando na porta ${port}`);
+
 module.exports = app;
