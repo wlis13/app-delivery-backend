@@ -1,5 +1,5 @@
 const { Op } = require('sequelize');
-const { User } = require('../../database/models');
+const { User } = require('../database/models');
 const ExceptionWithErrorCode = require('../error/ExceptionWithErrorCode');
 const { comparePasswords, hashPassword } = require('../utils/crypto');
 const { generateToken } = require('../utils/jwt');
